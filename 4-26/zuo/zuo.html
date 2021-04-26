@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 第一二题
+    var arr=[11,22,22,55,66,11,88,66,77,66];
+    var a=0
+    arr.forEach(function(v,k){ //k是索引 v是值
+        if(v==66){
+            console.log(k)
+        }
+        a+=v
+    })
+    console.log(a)
+
+
+    // 第三题
+    var arr1=[];
+    arr.forEach(function(v,k){ //k是索引 v是值
+        if(v!=22){
+            arr1.push(v)
+        }
+    })
+    console.log(arr1)
+
+
+    // 第四题
+    function add(arr,item){
+        for(var i=0;i<arr.length;i++){
+            if(item==arr[i]){
+                arr.splice(i,1);
+            i--
+            }
+        }
+        return arr;
+    }
+
+    console.log(add(arr,22));
+
+
+
+    // 最后一题
+
+    var b=0
+    arr.forEach(function(v,k){
+        if(v==66){
+            b++
+        }
+    })
+    console.log(b)
+
+
+
+    // 倒数第三题
+
+    // var arr=[11,22,22,55,66,11,88,66,77,66];
+    // var pos=1 , n=2
+    // var removed=arr.splice(pos,n)
+    // console.log(arr)
+
+
+
+    // 倒数第二题
+
+    // arr.splice(1,2)
+    // delete arr[22]
+    // console.log(arr)
+
+
+
+    // 倒数第二题
+
+    // var arr=[11,22,22,55,66,11,88,66,77,66];
+    // var remove=arr.splice(1,2)
+    // console.log(arr)
+
+
+
+    // 最后一题
+
+    // var arr=[11,22,22,55,66,11,88,66,77,66];
+    
+    // // for(var i=0;i<arr.length;i++){
+    // //     if(arr[i]==66){
+    // //         b++
+    // //     }
+    // // }
+    // // console.log(b)
+
+
+
+    
+</script>
+</html>
