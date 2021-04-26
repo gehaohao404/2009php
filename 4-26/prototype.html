@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原型</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var arr=new Array()
+
+    function add(name,sex,esc){
+        this.name=name
+        this.sex=sex
+        this.esc=esc
+    }
+
+    add.prototype.name="noname";
+    add.prototype.sex=0
+    add.prototype.esc="未知"
+
+    var p1=new add()
+    console.log(p1)
+    console.log(p1.name)
+    console.log(p1.esc)
+    console.log(p1.sex)
+
+    var p2=new add()
+    console.log(p2)
+    console.log(p2.name)
+    console.log(p2.esc)
+    console.log(p2.sex)
+
+    var p3=new add('lisi',10,"无")
+    console.log(p3)
+</script>
+</html>
