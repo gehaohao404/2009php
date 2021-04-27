@@ -52,6 +52,41 @@
     console.log(ct(arr,66))
 
 
+
+    // 第四题
+    function add(arr,item){
+        arr.forEach(function(v,k){
+            if(v==item){
+                
+                console.log(k,v)
+                arr.splice(k,1)
+        
+            }
+        })
+
+    }
+    console.log(arr)
+
+    add(arr,22);
+    console.log(arr)
+
+
+    // 最后一题
+    function dt(arr,x){
+        var b=0
+        arr.forEach(function(v){
+            if(v==x){
+                b++
+            }
+        })
+        return b
+    }
+
+    console.log(dt(arr,66))
+
+
+    
+
     // 第一二题
     // var arr=[11,22,22,55,66,11,88,66,77,66];
     // var a=0
@@ -74,32 +109,6 @@
     // console.log(arr1)
 
 
-    // 第四题
-    function add(arr,item){
-        for(var i=0;i<arr.length;i++){
-            if(item==arr[i]){
-                arr.splice(i,1);
-            i--
-            }
-        }
-        return arr;
-    }
-
-    console.log(add(arr,22));
-
-
-    // 最后一题
-    function dt(arr,x){
-        var b=0
-        arr.forEach(function(v){
-            if(v==x){
-                b++
-            }
-        })
-        return b
-    }
-
-    console.log(dt(arr,66))
     // 最后一题
 
     // var b=0
