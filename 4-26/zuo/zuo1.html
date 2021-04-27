@@ -15,21 +15,18 @@
 <script>
         function $(param){
         var obj=null;
-        if(param.substr(0,1)=="#"){
+        var i=param[0]
+        if(i=="#"){
             obj= document.querySelector(param)
-        }else if(param.substr(0,1)=="."){
+        }else if(i=="."){
             obj= document.querySelectorAll(param)
         }else{
             obj= document.querySelectorAll(param)
         }
-
-
-        obj.onn=function(event,fn){
-            obj.addEventListener(event,fn)
-            
+           return obj; 
         }
-        return obj;
-    }
+        
+    
 
   var a=$("#p1")
   console.log(a);

@@ -10,26 +10,68 @@
     
 </body>
 <script>
-    // 第一二题
     var arr=[11,22,22,55,66,11,88,66,77,66];
-    var a=0
-    arr.forEach(function(v,k){ //k是索引 v是值
-        if(v==66){
-            console.log(k)
+    // 第一题
+    function at(arr,x){
+        var add=[]
+    arr.forEach(function(v,k){
+        if(v==x){
+            // console.log(k)
+            add.push(k)
         }
-        a+=v
     })
-    console.log(a)
+    return add
+    }
+    
+    console.log(at(arr,22))
+
+
+    // 第二题
+    function bt(arr){
+        var a=0
+        arr.forEach(function(v){
+            a+=v
+        })
+        return a
+    }
+
+    console.log(bt(arr))
 
 
     // 第三题
-    var arr1=[];
-    arr.forEach(function(v,k){ //k是索引 v是值
-        if(v!=22){
-            arr1.push(v)
-        }
-    })
-    console.log(arr1)
+    function ct(arr,x){
+        var arr1=[]
+        arr.forEach(function(v){
+            if(v!=x){
+                arr1.push(v)
+            }
+        })
+        return arr1
+    }
+
+    console.log(ct(arr,66))
+
+
+    // 第一二题
+    // var arr=[11,22,22,55,66,11,88,66,77,66];
+    // var a=0
+    // arr.forEach(function(v,k){ //k是索引 v是值
+    //     if(v==66){
+    //         console.log(k)
+    //     }
+    //     a+=v
+    // })
+    // console.log(a)
+
+
+    // 第三题
+    // var arr1=[];
+    // arr.forEach(function(v,k){ //k是索引 v是值
+    //     if(v!=22){
+    //         arr1.push(v)
+    //     }
+    // })
+    // console.log(arr1)
 
 
     // 第四题
@@ -46,16 +88,27 @@
     console.log(add(arr,22));
 
 
+    // 最后一题
+    function dt(arr,x){
+        var b=0
+        arr.forEach(function(v){
+            if(v==x){
+                b++
+            }
+        })
+        return b
+    }
 
+    console.log(dt(arr,66))
     // 最后一题
 
-    var b=0
-    arr.forEach(function(v,k){
-        if(v==66){
-            b++
-        }
-    })
-    console.log(b)
+    // var b=0
+    // arr.forEach(function(v,k){
+    //     if(v==66){
+    //         b++
+    //     }
+    // })
+    // console.log(b)
 
 
 
